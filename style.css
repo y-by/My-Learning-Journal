@@ -220,6 +220,11 @@ footer {
   section {
     padding: 3.375em;
   }
+
+  .post-content {
+    padding-inline: 3.375em;
+  }
+
   footer {
     /* width: 100vw;
     position: fixed;
