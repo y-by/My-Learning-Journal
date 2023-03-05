@@ -98,7 +98,7 @@ section {
 }
 
 /******** hearo section ********/
-.hero-container {
+.home-hero-container {
   background: url(/images/blog-image.png) no-repeat; 
   background-position-y: 90%;
   -webkit-background-size: cover;
@@ -158,6 +158,7 @@ section {
   grid-column: 1 / -1;
   text-align: center;
 }
+
 /******** footer section ********/
 footer {
   text-align: center;
@@ -166,21 +167,32 @@ footer {
   padding-block: 2.25em;
 }
 
+/******** about page ********/
 
+.about-hero-text {
+  display: grid;
+  gap: 1em;
+}
 
 /******** media queries ********/
 @media (min-width: 570px) {
-  .hero-container {
-    height: 60vh;
-    background-position: center bottom -100px;
+  .home-hero-container {
+    height: 40vh;
+    background-position: center bottom ;
   }
+/******** about page ********/
+.about-hero-section {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
 }
 
 @media (min-width: 800px) {
   header {
     padding-inline: 3.375em;
   }
-  .hero-container {
+  .home-hero-container {
     /* background-position: bottom; */
     height: 50vh;
     background-position-y: 70%;
