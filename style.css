@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 body {
@@ -58,7 +59,8 @@ li {
 }
 
 header,
-section {
+section,
+article {
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -136,6 +138,10 @@ section {
   width: 100%;
 }
 
+.post-date {
+  text-transform: uppercase;
+}
+
 .post-title {
   padding-block: 0.5em;
   color: var(--title-short-black);
@@ -165,13 +171,28 @@ footer {
   background-color: #202020;
   color: #D7D7D7;
   padding-block: 2.25em;
+  
 }
 
 /******** about page ********/
-
 .about-hero-text {
   display: grid;
   gap: 1em;
+}
+
+/******** post page ********/
+.post-hero-section {
+  padding: 0;
+}
+
+.post-hero-text {
+  display: grid;
+  gap: 1em;
+  padding-block-end: 1em;
+}
+
+.post-content {
+  padding: 1em;
 }
 
 /******** media queries ********/
@@ -200,12 +221,17 @@ footer {
   section {
     padding: 3.375em;
   }
+  footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+  }
 }
 @media (min-width: 1080px) {
   header {
-    padding-inline: 0;
+    padding-inline: 0.5em;
   }
   .articles-container {
-    padding-inline: 0;
+    padding-inline: 0.5em;
   }
 }
